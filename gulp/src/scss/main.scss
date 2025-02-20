@@ -55,3 +55,13 @@ body ::selection {
 mark {
   background: none;
 }
+
+header{
+  display: block;
+  background: #0BA858;
+}
+
+selector:nth-child(2){
+  display: block;
+  background: grey;
+}

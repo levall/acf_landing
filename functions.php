@@ -1,21 +1,17 @@
 <?php
-define( 'HOME_PAGE_ID', get_option( 'page_on_front' ) );
-define( 'BLOG_ID', get_option( 'page_for_posts' ) );
-define( 'POSTS_PER_PAGE', get_option( 'posts_per_page' ) );
 /* INCLUD CUSTOM FUNCTIONS
    ========================================================================== */
 // Recommended plugins installer
-require_once 'include/plugins/init.php';
+use acf_landing\themes\acf_landing\include\classes\MafList;require_once 'include/plugins/init.php';
 // Custom functionality
 require_once 'include/core.php';
 require_once 'include/acf/acf-settings.php';
 require_once('include/gutenberg.php');
 require_once 'include/classes/maf.inc';
-//require_once 'include/woocommerce.php';
-// require_once('include/cpt.php');
+require_once 'include/classes/MafList.inc';
 
-//update image  size
-// add_image_size( '2048x2048_cropped', '2048', '2048', true );
+global $mafList;
+$mafList = new MafList();
 
 function set_default_image_sizes() {
 	update_option( 'thumbnail_size_w', 400 );

@@ -1,5 +1,5 @@
 <?php
-    $logo = get_field('maf_logo', 'project_settings');
+$logo = get_field('maf_logo', 'project_settings');
 $socialNetworks = get_field('social_networks', 'project_settings');
 
 
@@ -22,13 +22,6 @@ $socialNetworks = get_field('social_networks', 'project_settings');
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?> >
-
-
-<?php
-
-
-?> 
-<div id="wrap">
     <header class="header">
         <div class="container flex v-center">
             <a href="<?php echo site_url(); ?>/" id="logo" class="logo">

@@ -38,7 +38,7 @@ $button = get_field('button');
                 <?php } ?>
             </div>
 
-            </div>
+       </div>
 
     </section>
 <?php } ?>
