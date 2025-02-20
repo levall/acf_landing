@@ -1,0 +1,57 @@
+/* FONTS
+   ========================================================================== */
+@font-face {
+  font-family: "PP Mori";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/PPMori-Regular.woff") format("woff"), url("../fonts/PPMori-Regular.woff2") format("woff2");
+}
+/* MAIN  FILES
+   ========================================================================== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-overflow-scrolling: touch;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+body {
+  color: #081427;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  height: auto;
+  min-height: 100vh;
+  background-color: #FBFBFB;
+  position: relative;
+  line-height: 1;
+  display: -moz-flex;
+  display: flex;
+  flex-direction: column;
+  -moz-flex-direction: column;
+}
+body ::-moz-selection {
+  background: #081427;
+  color: #ffffff;
+}
+body ::selection {
+  background: #081427;
+  color: #ffffff;
+}
+
+#wrap {
+  -moz-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+mark {
+  background: none;
+}
