@@ -1,6 +1,5 @@
 <?php
 
-namespace acf_landing\themes\acf_landing\include\classes;
 class Maf
 {
     public $title;

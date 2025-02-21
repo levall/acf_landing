@@ -1,9 +1,8 @@
 <?php
-/**
- * Block Name: competencies
- *
- * This is the template that displays the competencies.
- */
+/*
+ * Template for: product catalog
+ * $mafList - list with all products with split by purpose lists
+ * */
 
 $title = get_field('title');
 $buttonText = get_field('catalog_button_text', 'project_settings');

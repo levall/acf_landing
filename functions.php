@@ -1,17 +1,19 @@
 <?php
-/* INCLUD CUSTOM FUNCTIONS
+/* INCLUDE CUSTOM FUNCTIONS
    ========================================================================== */
 // Recommended plugins installer
-use acf_landing\themes\acf_landing\include\classes\MafList;require_once 'include/plugins/init.php';
+require_once 'include/plugins/init.php';
 // Custom functionality
 require_once 'include/core.php';
 require_once 'include/acf/acf-settings.php';
 require_once('include/gutenberg.php');
 require_once 'include/classes/maf.inc';
 require_once 'include/classes/MafList.inc';
+require_once 'include/classes/Ajax.inc';
 
 global $mafList;
 $mafList = new MafList();
+$ajax = new Ajax();
 
 function set_default_image_sizes() {
 	update_option( 'thumbnail_size_w', 400 );

@@ -1,9 +1,5 @@
 <?php
 
-namespace acf_landing\themes\acf_landing\include\classes;
-
-use acf_landing\themes\acf_landing\include\classes\Maf;use WP_Query;
-
 class MafList
 {
     public $elements = [];
