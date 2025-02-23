@@ -14,7 +14,7 @@ global $mafList;
 
 if ($title) {
     ?><section class="modules" id="modules">
-        <div class="modules_block">
+        <div class="container">
             <div class="title"><?php echo $title?></div>
             <div class="text"><?php echo $text?></div>
             <div class="images"><?php
@@ -24,13 +24,14 @@ if ($title) {
                     ?><img src="<?php echo $imageSrc['image']?>"><?php
 
                     if (!empty($images)){
-                        ?><div>
-                            HERE SHOULD BE SVG FOR PLUS
+                        ?><div class="plus">
+                            +
                         </div><?php
                     }
                 }
-                ?><div class="open_details" data-id="<?php echo $mafList->modules[0]->id; ?>"><?php echo $button['title'];?></div>
+                ?>
             </div>
+            <a href="#popup-details" data-fancybox class="btn-1 open_details"  data-id="<?php // echo $mafList->modules[0]->id; ?>"><?php echo $button['title'];?></a>
         </div>
     </section><?php
 }

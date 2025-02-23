@@ -29,7 +29,7 @@ $socialNetworks = get_field('social_networks', 'project_settings');
                     <img src="<?php echo $logo ?>" alt="logo">
 				<?php endif; ?>
             </a>
-            <nav class="main_nav  mobile_hide">
+            <nav class="main_nav">
 				<?php
 				$main_nav = array(
 					'theme_location' => 'main_menu',
@@ -42,9 +42,9 @@ $socialNetworks = get_field('social_networks', 'project_settings');
             </nav>
             <div class="social-networks">
                 <?php foreach ($socialNetworks as $social) {
-                    ?><div><a href="<?php echo $social['link'];?>" target="_blank">
-                            <img src="<?php echo $social['social_network'];?>">
-                        </a></div>
+                    ?><a href="<?php echo $social['link'];?>" target="_blank">
+                            <?php echo $social['social_network'];?>
+                        </a>
                 <?php }?>
             </div>
 

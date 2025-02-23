@@ -1,11 +1,4 @@
-/* FONTS
-   ========================================================================== */
-@font-face {
-  font-family: "PP Mori";
-  font-weight: 400;
-  font-style: normal;
-  src: url("../fonts/PPMori-Regular.woff") format("woff"), url("../fonts/PPMori-Regular.woff2") format("woff2");
-}
+ 
 /* MAIN  FILES
    ========================================================================== */
 * {
@@ -23,21 +16,7 @@ html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
 }
-
-body {
-  color: #081427;
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  height: auto;
-  min-height: 100vh;
-  background-color: #FBFBFB;
-  position: relative;
-  line-height: 1;
-  display: -moz-flex;
-  display: flex;
-  flex-direction: column;
-  -moz-flex-direction: column;
-}
+ 
 body ::-moz-selection {
   background: #081427;
   color: #ffffff;
@@ -55,13 +34,5 @@ body ::selection {
 mark {
   background: none;
 }
-
-header{
-  display: block;
-  background: #0BA858;
-}
-
-selector:nth-child(2){
-  display: block;
-  background: grey;
-}
+ 
+ 

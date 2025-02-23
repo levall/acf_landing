@@ -64,5 +64,5 @@ function serve() {
   watch('src/scss/**.scss', series(scss)).on('change', sync.reload) 
 }
  
-exports.serve = series(clear, scss, js, buildCopy, pathCopy, serve)
+exports.serve = series(clear, scss, js, buildCopy, images, pathCopy, serve)
 exports.clear = clear

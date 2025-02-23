@@ -22,7 +22,9 @@ function simple_theme_style_js() {
 		wp_enqueue_script( 'jquery' );
 	};
     wp_enqueue_script( 'init_js', get_template_directory_uri() . '/assets/js/main-min.js', array( 'jquery' ), '1.0', true );
+    wp_enqueue_script( 'fancybox_js', '//cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js');
     wp_enqueue_style( 'init_css', get_template_directory_uri() . '/assets/css/style.css' );
+    wp_enqueue_style( 'fancybox_css', '//cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css' );
 }
 
 add_action( 'wp_enqueue_scripts', 'simple_theme_style_js' );

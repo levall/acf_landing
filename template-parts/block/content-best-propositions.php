@@ -12,17 +12,24 @@ global $mafList;
 ?>
 <?php if ($title) { ?>
     <section class="best" id="best">
-        <h2><?php echo $title; ?></h2>
-        <?php foreach ($mafList->best as $bestProposition) {?>
-            <div class="best_block">
-                <div class="first_part"><img src="<?php echo $bestProposition->images[0]?>"></div>
-                <div class="second_part">
-                    <div><?php echo $bestProposition->title?></div>
-                    <div><?php echo $bestProposition->text; ?></div>
-                    <div class="open_details" data-fancybox data-id="<?php echo $bestProposition->id; ?>"><?php echo $buttonText;?></div>
+        <div class="best_title"><?php echo $title; ?></div>
+        <div class="best_blocks">
+            <?php foreach ($mafList->best as $bestProposition) {?>
+                <div class="best_block">
+                    <div class="container">
+                        <div class="first_part">
+                            <div class="img">
+                                <img src="<?php echo $bestProposition->images[0]?>">
+                            </div>
+                        </div>
+                        <div class="second_part">
+                            <div class="title"><?php echo $bestProposition->title?></div>
+                            <div class="desc"><?php echo $bestProposition->text; ?></div>
+                            <a href="#popup-details" class="btn-1 open_details" data-fancybox data-id="<?php echo $bestProposition->id; ?>"><?php echo $buttonText;?></a>
+                        </div>
+                    </div>
                 </div>
-
-            </div>
-        <?php }?>
+            <?php }?>
+        </div>
     </section>
 <?php } ?>
