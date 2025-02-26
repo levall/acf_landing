@@ -1,4 +1,5 @@
 <?php get_header();
+
 if ( is_home() ) {
 	$queryname = get_the_title( BLOG_ID );
 } else {
