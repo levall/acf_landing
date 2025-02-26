@@ -51,7 +51,7 @@ function theme_acf_init()
         ));
 
 
-        // register person-card block
+        // register banner block
         acf_register_block(array(
             'name' => 'modules-banner',
             'title' => __('Modules'),
@@ -65,7 +65,7 @@ function theme_acf_init()
             'keywords' => array('modules-banner'),
         ));
 
-        // register person-card block
+        // register resposibilities block
         acf_register_block(array(
             'name' => 'maf-resposibilities',
             'title' => __('MAF Responsibilities'),
@@ -79,5 +79,32 @@ function theme_acf_init()
             'keywords' => array('maf-resposibilities'),
         ));
 
+        // register ordering block
+        acf_register_block(array(
+            'name' => 'maf-ordering',
+            'title' => __('MAF ordering'),
+            'mode' => 'edit',
+            'description' => __('MAF ordering'),
+            'render_callback' => 'my_acf_block_render_callback',
+            'render_template' => 'my_acf_block_render_callback',
+            'enqueue_assets' => 'init_js',
+            'category' => 'home',
+            'icon' => 'dashicons-page',
+            'keywords' => array('maf-ordering'),
+        ));
+
+        // register thank you page block
+        acf_register_block(array(
+            'name' => 'maf-thankyou',
+            'title' => __('MAF thank you page'),
+            'mode' => 'edit',
+            'description' => __('MAF thank you page'),
+            'render_callback' => 'my_acf_block_render_callback',
+            'render_template' => 'my_acf_block_render_callback',
+            'enqueue_assets' => 'init_js',
+            'category' => 'home',
+            'icon' => 'dashicons-page',
+            'keywords' => array('maf-thankyou'),
+        ));
     }
 }

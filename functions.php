@@ -116,7 +116,9 @@ function theme_allowed_block_types($allowed_blocks)
         'acf/product-catalog',
         'acf/modules-banner',
         'acf/banner',
-        'acf/maf-resposibilities'
+        'acf/maf-resposibilities',
+        'acf/maf-ordering',
+        'acf/maf-thankyou'
     );
 }
 

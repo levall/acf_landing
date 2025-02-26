@@ -1,4 +1,9 @@
-<?php get_header(); ?>
+<?php get_header();
+global $post;
+
+the_post();
+
+?>
 
 <?php the_content(); ?>
 

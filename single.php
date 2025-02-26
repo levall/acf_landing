@@ -1,4 +1,5 @@
 <?php get_header();
+var_dump('234234234234');
 global $post; ?>
 <div id="content" class="wrap flex">
   <main class="index-main">
