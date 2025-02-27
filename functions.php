@@ -111,6 +111,7 @@ add_filter('allowed_block_types', 'theme_allowed_block_types');
 
 function theme_allowed_block_types($allowed_blocks)
 {
+
     return array(
         'acf/best-propositions',
         'acf/product-catalog',
