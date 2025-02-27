@@ -34,7 +34,7 @@ $button = get_field('button');
                 if ($button) {
                     $link_title = $button['title'];
 
-                    ?><a class="btn-1" href="/order"
+                    ?><a class="btn-1" href="<?php echo $button['url']?>"
                          target="_blank">
                     <?php echo esc_html($link_title); ?>
                     </a><?php
