@@ -1,5 +1,5 @@
 $(document).ready(function (){
-    $(".open_details").on('click', function (){
+    $(".catalog_element").on('click', function (){
         let dataRequest = {
             action: 'open_details',
             maf_id: $(this).data('id'),

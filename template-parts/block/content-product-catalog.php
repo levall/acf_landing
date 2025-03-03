@@ -15,7 +15,7 @@ global $mafList;
             <div class="container">
                 <div class="catalog_items">
                     <?php foreach ($mafList->elements as $maf) {?>
-                        <div class="catalog_element">
+                        <div class="catalog_element"  data-fancybox data-src="#popup-details" data-id="<?php echo $maf->id; ?>">
                             <div class="first_part">
                                 <div class="img">
                                     <img src="<?php echo $maf->images[0]?>">
@@ -23,7 +23,7 @@ global $mafList;
                             </div>
                             <div class="second_part">
                                 <div class="title"><?php echo $maf->title?></div>
-                                <a href="#popup-details" data-fancybox class="open_details" id="<?php echo $maf->id; ?>"><?php echo $buttonText;?></a>
+                                <div class="open_details"><?php echo $buttonText;?></div>
                             </div> 
                         </div>
                     <?php }?>

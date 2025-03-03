@@ -35,3 +35,21 @@ function new_loop_shop_per_page( $cols ) {
 
 	return $cols;
 }
+
+add_action( 'wp_footer', 'redirect_cf7' );
+
+function redirect_cf7() { ?>
+    <script>
+        document.addEventListener( 'wpcf7mailsent', function( event ) {
+            _location = 'https://www.zakarpat-maf.com.ua//thank-you';
+            window.open(_location, "MsgWindow");
+        }, false );
+    </script>
+<?php }
+
+function custom_filter_wpcf7_is_tel( $result, $tel ) {
+  $result = preg_match( '/^\(?\+?([0-9]{1,4})?\)?[-\. ]?(\d{10})$/', $tel );
+  return $result;
+}
+
+add_filter( 'wpcf7_is_tel', 'custom_filter_wpcf7_is_tel', 10, 2 );

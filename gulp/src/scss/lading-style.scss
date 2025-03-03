@@ -1005,3 +1005,17 @@ path {
         }
     }
 }
+
+.catalog_element{
+    cursor: pointer;
+    &:hover{
+        .open_details{
+            color: #FF6915;
+        }
+    }
+
+}
+
+.screen-reader-response {
+    display: none;
+}
