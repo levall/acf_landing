@@ -10,7 +10,7 @@ $title = get_field('title');
 $image = get_field('image');
 $button = get_field('button');
 
-?><section class="top-banner">
+?><section class="thankyou">
     <div class="container">
         <div class="flex-wrapper">
             <div class="left"><?php
@@ -20,7 +20,7 @@ $button = get_field('button');
             ?></div>
             <div class="right"><?php
                  if ($title) { ?>
-                    <p class="text"><?php
+                    <p class="title"><?php
                         echo $title;
                     ?></p><?php
                 }

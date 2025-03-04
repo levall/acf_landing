@@ -14,7 +14,7 @@ $maf = $args['maf'];
         <div class="title"><?php echo $maf->title;?></div>
         <div class="image only_for_mobile"><img src="<?php echo $maf->images[0];?>"></div>
         <div class="text"><?php echo $maf->text;?></div>
-        <a class="btn" href="/order"
+        <a class="btn-1" href="/order"
             target="_blank">
             <?php echo $orderButton;?>
         </a>

@@ -10,13 +10,13 @@ $title = get_field('title');
 $image = get_field('image');
 $form = get_field('form');
 
-?><section class="top-banner">
+?><section class="contact-top">
     <div class="container">
         <div class="flex-wrapper">
             <div class="left">
                 <div><?php
                     if ($title) { ?>
-                        <p class="text"><?php
+                        <p class="title"><?php
                                 echo $title;
                             ?></p><?php
                     }
