@@ -1342,3 +1342,13 @@ path {
         }
     }
 }
+
+.wpcf7-not-valid-tip, .wpcf7-response-output{
+    display: block;
+    margin: -10px 0 20px 0 !important;
+    color: red;
+}
+
+.wpcf7-response-output {
+    margin: 20px 0 0px !important;
+}

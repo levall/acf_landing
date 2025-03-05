@@ -40,9 +40,30 @@ $(document).ready(function () {
     });
 
     document.addEventListener( 'wpcf7mailsent', function( event ) {
+        $(".wpcf7-response-output").hide();
+
         setTimeout(() => {
             location = '/thank-you';
-        }, 300); // Wait for 3 seconds to redirect.
+        }, 10);
     }, false );
+
+    document.addEventListener( 'wpcf7invalid', function( event ) {
+      $(".wpcf7-response-output").hide();
+    }, false);
+
+    document.querySelectorAll('#menu-header-menu a').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            let href =  this.getAttribute('href');
+
+            if( $('body.home').length === 0 ){
+                window.location.href = '/' + href;
+            }
+
+            document.querySelector(href).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
 
 })
