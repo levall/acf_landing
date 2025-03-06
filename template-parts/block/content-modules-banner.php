@@ -31,7 +31,8 @@ if ($title) {
                 }
                 ?>
             </div>
-            <a href="#popup-details" data-fancybox class="btn-1 open_details"  data-id="<?php // echo $mafList->modules[0]->id; ?>"><?php echo $button['title'];?></a>
+            <a href="#popup-details" data-fancybox class="btn-1 open_details" data-src="#popup-details"
+               data-id="<?php echo $mafList->modules[0]->id; ?>"><?php echo $button['title'];?></a>
         </div>
     </section><?php
 }
