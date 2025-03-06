@@ -12,7 +12,8 @@ $button = get_field('button');
 
 global $mafList;
 
-if ($title) {
+if ($title && (isset($mafList->elements) && count($mafList->elements) > 0)
+    && (isset($mafList->modules) && count($mafList->modules) > 0)) {
     ?><section class="modules" id="modules">
         <div class="container">
             <div class="title"><?php echo $title?></div>
