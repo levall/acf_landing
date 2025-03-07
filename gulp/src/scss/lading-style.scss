@@ -715,12 +715,12 @@ path {
         }
 
         .maf_text {
-            max-height: 200px;
+            height: 266px;
             overflow: hidden;
             position: relative;
 
             @media (max-width: 1100px) {
-                max-height: 140px;
+                height: 159px;
             }
 
             &::after {
@@ -1111,7 +1111,7 @@ path {
                 height: 90px; 
                 border: 2px solid #181C21; 
                 background: #FFF;
-                color: #AAA;
+                color: #181C21;
                 padding: 25px;
                 font-family: Montserrat;
                 font-size: 32px;
@@ -1340,5 +1340,14 @@ path {
                 }
             }
         }
+    }
+}
+
+.logged-in.admin-bar .header {
+    top: 32px !important;
+}
+@media screen and (max-width: 782px) {
+    .logged-in.admin-bar .header {
+        top: 46px !important;
     }
 }
