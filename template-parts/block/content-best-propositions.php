@@ -25,7 +25,7 @@ global $mafList;
                         <div class="second_part">
                             <div class="title"><?php echo $bestProposition->title?></div>
                             <div class="desc"><?php echo $bestProposition->text; ?></div>
-                            <a href="#popup-details" class="btn-1 open_details" data-fancybox data-id="<?php echo $bestProposition->id; ?>"><?php echo $buttonText;?></a>
+                            <div class="btn-1 open_details maf_element" data-fancybox data-src="#popup-details" data-id="<?php echo $bestProposition->id; ?>"><?php echo $buttonText;?></div>
                         </div>
                     </div>
                 </div>

@@ -48,7 +48,8 @@ function redirect_cf7() { ?>
 <?php }
 
 function custom_filter_wpcf7_is_tel( $result, $tel ) {
-  $result = preg_match( '/^\(?\+?([0-9]{1,4})?\)?[-\. ]?(\d{10})$/', $tel );
+  $result = preg_match( '/^([\+ 0-9]{1,4})?\(?[0-9]{3}\)?[- 0-9]{10}$/', $tel );
+
   return $result;
 }
 
