@@ -32,7 +32,7 @@ if ($title && (isset($mafList->elements) && count($mafList->elements) > 0)
                 }
                 ?>
             </div>
-            <div data-fancybox class="btn-1 open_details" data-src="#popup-details"
+            <div data-fancybox class="btn-1 open_details maf_element" data-src="#popup-details"
                data-id="<?php echo $mafList->modules[0]->id; ?>"><?php echo $button['title'];?></div>
         </div>
     </section><?php
